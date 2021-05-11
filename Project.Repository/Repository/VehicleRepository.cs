@@ -48,9 +48,5 @@ namespace Project.Repository
             await unitOfWork.CommitAsync();
             return updatedItem;
         }
-        public Task<IEnumerable<T>> GetListOfMakeNamesAsync() // NAKNADNO SREDITI!!!!
-        {
-            throw new NotImplementedException();
-        }
     }
 }

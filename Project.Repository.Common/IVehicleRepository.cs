@@ -14,9 +14,10 @@ namespace Project.Repository.Common
         public Task<T> CreteAsync(T newItem);
         public Task<T> DeleteAsync(int id);
         public Task<T> GetAsync(int id);
+
         //public Task<IPagedList<T>> FindAsync(IFilter filter, ISort sort, IPaging<T> paging); // OVO DODATI NAKNADNO
 
-        public Task<IEnumerable<T>> GetListOfMakeNamesAsync(); // OVO STAVITI NEGDJE DRUGO?????
+        //public Task<IEnumerable<T>> GetListOfMakeNamesAsync(); // OVO STAVITI NEGDJE DRUGO????? --> DA!!
 
 
         //KOPIRANO S BLOGA *********

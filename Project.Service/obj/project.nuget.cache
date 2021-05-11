@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ylUX3d+OJEGpIg+avOIMEyO5YFEe/g+pD0b9jidgnQmkbT1IvSo7WvlPdSosL2APJgA4Ey4Od53J+SY8vMXZWA==",
+  "dgSpecHash": "nfJIff9K3qpsQp11fOsHpzh1YREg5ncAzG1Vq7QVNwiqMO3qKm8+LJc5qvkZkUC6K4ZQqj80JyoDqM5mwLzOfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivana\\Desktop\\CarsAppPart2\\CarsAppPart2\\Project.Service\\Project.Service.csproj",
+  "projectFilePath": "D:\\zadatak2\\CarsAppPart2\\CarsAppPart2\\Project.Service\\Project.Service.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ivana\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\ivana\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

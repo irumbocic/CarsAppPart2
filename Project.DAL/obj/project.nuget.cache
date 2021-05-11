@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jsPZj3+vjxNUopB9b7eCPY/8u1CK12S7YtOzlZA1tvim8cNEAn7FK9KDZwssezxQPTjXSkWfM21ds3XC8BOorA==",
+  "dgSpecHash": "FFYykeHEghQkLtUYpT3slZvHWfnoDmS7n9+K4ZrsevI4T4faNlc40FHze8QpV/1wHMsIPmKSwcWIwcl475+dFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivana\\Desktop\\CarsAppPart2\\CarsAppPart2\\Project.DAL\\Project.DAL.csproj",
+  "projectFilePath": "D:\\zadatak2\\CarsAppPart2\\CarsAppPart2\\Project.DAL\\Project.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivana\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

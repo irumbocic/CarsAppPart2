@@ -12,6 +12,6 @@ namespace Project.Model.Common
         public string Name { get; set; }
         public string Abrv { get; set; }
 
-        public  VehicleMake VehicleMake { get; set; }
+        public  VehicleMakeEntity VehicleMake { get; set; }
     }
 }

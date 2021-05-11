@@ -13,12 +13,12 @@ namespace Project.DAL
         {
         }
 
-        public  DbSet<VehicleMake> VehicleMakes { get; set; }
-        public  DbSet<VehicleModel> VehicleModels { get; set; }
+        public  DbSet<VehicleMakeEntity> VehicleMakes { get; set; }
+        public  DbSet<VehicleModelEntity> VehicleModels { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<VehicleMake>()
+            modelBuilder.Entity<VehicleMakeEntity>()
                 .HasMany(e => e.VehicleModels)
                 .WithOne(e => e.VehicleMake)
                 .HasForeignKey(e => e.MakeId)

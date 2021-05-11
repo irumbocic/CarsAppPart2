@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T2gTAGjrslUg7T1aEkPyHaFpJnDZWX/mfAQAhSo0tyDdRV0F0oorDGdYTPUzL+bU1xiF8hbfEGc0CMQcI5wI1Q==",
+  "dgSpecHash": "BDvE/KD+qXyIHhjR3YO4YDaADK0c7lvEFclyUVFAs6I3qjqTB0C2iaPxHCKO30nHczzVFBaL6sqbF6pBDeL/Kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivana\\Desktop\\CarsAppPart2\\CarsAppPart2\\Project.WebAPI\\Project.WebAPI.csproj",
+  "projectFilePath": "D:\\zadatak2\\CarsAppPart2\\CarsAppPart2\\Project.WebAPI\\Project.WebAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ivana\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\ivana\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.5\\microsoft.aspnetcore.jsonpatch.5.0.5.nupkg.sha512",

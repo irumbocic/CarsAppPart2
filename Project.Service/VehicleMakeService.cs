@@ -1,6 +1,7 @@
 ﻿using Project.Model.Common;
 using Project.Repository;
 using Project.Repository.Common;
+using Project.Repository.Repository;
 using Project.Service.Common;
 using System;
 using System.Collections.Generic;
@@ -11,13 +12,12 @@ namespace Project.Service
 {
     public class VehicleMakeService : IVehicleMakeService // AUTOMAPPER - mapirati iz DAL u MOdel!!
     {
-        private readonly IVehicleRepository<IVehicleMake> repository;
+        private readonly VehicleMakeRepository repository;
 
-        public VehicleMakeService(IVehicleRepository<IVehicleMake> repository) 
+        public VehicleMakeService(VehicleMakeRepository repository)
         {
             this.repository = repository;
         }
-
         public async Task<IVehicleMake> CreteAsync(IVehicleMake newItem)
         {
             return await repository.CreteAsync(newItem);
@@ -33,14 +33,13 @@ namespace Project.Service
             return await repository.GetAsync(id);
         }
 
-        public async Task<IEnumerable<IVehicleMake>> GetListOfMakeNamesAsync()
-        {
-            return await repository.GetListOfMakeNamesAsync();
-        }
-
         public async Task<IVehicleMake> UpdateAsync(IVehicleMake updatedItem)
         {
             return await repository.UpdateAsync(updatedItem);
+        }
+        public async Task<IEnumerable<IVehicleMake>> GetListOfMakeNamesAsync()
+        {
+            return await repository.GetListOfMakeNamesAsync();
         }
     }
 }

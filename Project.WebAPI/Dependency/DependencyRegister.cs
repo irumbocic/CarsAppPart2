@@ -23,15 +23,15 @@ namespace Project.WebAPI.Dependency
             builder.RegisterType<VehicleMakeService>().As<IVehicleMakeService>().InstancePerLifetimeScope();
 
 
-            ////// //builder.RegisterType<VehicleMakeService>().As<IVehicleMakeService>();
-            ////// //builder.RegisterType<VehicleModelService>().As<IVehicleModelService>();
+            builder.RegisterType<VehicleMakeService>().As<IVehicleMakeService>();
+            builder.RegisterType<VehicleModelService>().As<IVehicleModelService>();
 
-            //builder.RegisterType<VehicleRepository<VehicleMake>>().As<IVehicleRepository<IVehicleMake>>();
-            //builder.RegisterType<VehicleRepository<VehicleModel>>().As<IVehicleRepository<IVehicleModel>>();
+            builder.RegisterType<IVehicleRepository<VehicleMake>>().As<IVehicleRepository<IVehicleMake>>();
+            builder.RegisterType<IVehicleRepository<VehicleModel>>().As<IVehicleRepository<IVehicleModel>>();
 
 
 
-            ////// builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
+            //builder.registertype<unitofwork>().as< iunitofwork > ().instanceperlifetimescope();
 
             ////// builder.RegisterGeneric(typeof(VehicleRepository<>))
             //////.As(typeof(IVehicleRepository<>))

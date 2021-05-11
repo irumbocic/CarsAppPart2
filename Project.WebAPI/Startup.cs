@@ -60,6 +60,7 @@ namespace Project.WebAPI
         {
             builder.RegisterModule(new DependencyRegister());
             var container = ContainerConfig.Configure();
+            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

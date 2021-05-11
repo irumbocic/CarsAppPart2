@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ly0h9WL3u2GJlCdakW83QTAcOGgR/IVgbW5Gyrq3X/prAOxHaXNmdqSms5W4ZnDmdeJx1N9aDIsbYvqyP2T2EA==",
+  "dgSpecHash": "iRgDPJVxc8pDRDRfyBFtmtjtmNXxm6Aon4oBcr1JTM8RfjZLJMgIO2FpO66UoPePLx4epeqUOY9YJnjBv2Nw6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivana\\Desktop\\CarsAppPart2\\CarsAppPart2\\Project.Model\\Project.Model.csproj",
+  "projectFilePath": "D:\\zadatak2\\CarsAppPart2\\CarsAppPart2\\Project.Model\\Project.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivana\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

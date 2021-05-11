@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Project.Model;
+using Project.DAL;
+using Project.Model.Common;
 
 namespace Project.Service.Profiles
 {
@@ -12,11 +14,11 @@ namespace Project.Service.Profiles
     {
         public ModelProfile()
         {
-            CreateMap<Project.DAL.VehicleModel, Project.Model.VehicleModel>()
+            CreateMap<VehicleModelEntity, VehicleModel>()
                 .ReverseMap();
-            CreateMap<Project.DAL.VehicleModel, Project.Model.Common.IVehicleModel>()
+            CreateMap<VehicleModelEntity,IVehicleModel>()
               .ReverseMap();
-            CreateMap<Project.Model.VehicleModel, Project.Model.Common.IVehicleModel>()
+            CreateMap<VehicleModel, IVehicleModel>()
               .ReverseMap();
         }
     }

@@ -1,20 +1,15 @@
-﻿using Project.DAL;
-using Project.Model.Common;
-using Project.Repository;
-using Project.Repository.Common;
+﻿using Project.Model.Common;
 using Project.Service.Common;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Project.Repository.Repository;
 using System.Threading.Tasks;
 
 namespace Project.Service
 {
     public class VehicleModelService : IVehicleModelService
     {
-        private readonly IVehicleRepository<IVehicleModel> repository;
+        private readonly VehicleModelRepository repository;
 
-        public VehicleModelService(IVehicleRepository<IVehicleModel> repository)
+        public VehicleModelService(VehicleModelRepository repository )
         {
             this.repository = repository;
         }
