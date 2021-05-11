@@ -1,0 +1,14 @@
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.csprojAssemblyReference.cache
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.AssemblyInfoInputs.cache
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.AssemblyInfo.cs
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.csproj.CoreCompileInputs.cache
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.Model.deps.json
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.Model.dll
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.Model.pdb
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.Model.Common.dll
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.Model.Common.pdb
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.csproj.CopyComplete
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.dll
+C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.Model\obj\Debug\netcoreapp3.1\Project.Model.pdb
