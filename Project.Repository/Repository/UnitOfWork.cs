@@ -12,7 +12,7 @@ namespace Project.Repository
     {
         private readonly VehicleContext context;
 
-        public UnitOfWork(VehicleContext context)
+        public UnitOfWork(VehicleContext context) // U Unit of work moram staviti samo slucaj kad se kreira novi model, koji nema make iz liste (nego se kreira i novi make)... uh... razmisliti dobro o ovome
         {
             this.context = context;
         }

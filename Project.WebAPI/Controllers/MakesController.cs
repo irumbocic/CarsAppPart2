@@ -1,18 +1,10 @@
-﻿//using AutoMapper;
-//using Microsoft.AspNetCore.Http;
-//using Microsoft.AspNetCore.JsonPatch;
-//using Service.Methods;
-//using Service.Models;
-//using Service.PageSortFilter;
-//using System;
-//using System.Collections.Generic;
-//using WebAPITest.Dto;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Project.Model;
 using Project.Model.Common;
 using Project.Service.Common;
 using Project.WebAPI.Dto;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,8 +12,9 @@ namespace Project.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MakesController : ControllerBase
+    public class MakesController : Controller
     {
+       
         private readonly IVehicleMakeService vehicleMakeService;
         private readonly IMapper mapper;
 
@@ -49,7 +42,7 @@ namespace Project.WebAPI.Controllers
 
         public async Task<IActionResult> Get(int id)
         {
-            
+
             var makeItem = mapper.Map<VehicleMakeDto>(await vehicleMakeService.GetAsync(id));
             if (makeItem == null)
             {
@@ -100,7 +93,7 @@ namespace Project.WebAPI.Controllers
         //    }
 
         //    var updatedMake = await vehicleMakeService.UpdateMakeAsync(mapper.Map<VehicleMake>(makeToPatch));
- 
+
         //    return NoContent();
         //}
 
@@ -115,7 +108,8 @@ namespace Project.WebAPI.Controllers
             var deletedMake = await vehicleMakeService.DeleteAsync(id);
 
             return NoContent();
-        
+
         }
     }
 }
+

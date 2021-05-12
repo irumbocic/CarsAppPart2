@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Service.EfStructure;
+using Project.DAL;
 
-namespace Service.Migrations
+namespace Project.DAL.Migrations
 {
     [DbContext(typeof(VehicleContext))]
     [Migration("20210319224154_FirstMigration")]

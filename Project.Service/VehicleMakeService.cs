@@ -33,13 +33,17 @@ namespace Project.Service
             return await repository.GetAsync(id);
         }
 
+       
         public async Task<IVehicleMake> UpdateAsync(IVehicleMake updatedItem)
         {
             return await repository.UpdateAsync(updatedItem);
         }
-        public async Task<IEnumerable<IVehicleMake>> GetListOfMakeNamesAsync()
+
+
+        public Task<IEnumerable<IVehicleMake>> GetListOfMakeNamesAsync()
         {
-            return await repository.GetListOfMakeNamesAsync();
+            throw new NotImplementedException();
         }
+
     }
 }

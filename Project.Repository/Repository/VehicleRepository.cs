@@ -10,42 +10,40 @@ namespace Project.Repository
 {
     public class VehicleRepository<T> : IVehicleRepository<T> where T : class
     {
-        private readonly IUnitOfWork unitOfWork;
-        internal DbSet<T> dbSet;
+        private readonly VehicleContext context;
 
-        public VehicleRepository(IUnitOfWork unitOfWork)
+        public VehicleRepository(VehicleContext context)
         {
-            if (unitOfWork == null) throw new ArgumentNullException("unitOfWork"); // MOzda negdje drugo staviti?
-            this.unitOfWork = unitOfWork;
-            this.dbSet = unitOfWork.Db.Set<T>();
+            this.context = context;
         }
 
         public async Task<T> CreteAsync(T newItem)
         {
-            await dbSet.AddAsync(newItem);
-            await unitOfWork.CommitAsync();
+            await context.Set<T>().AddAsync(newItem);
+            await context.SaveChangesAsync();
             return newItem;
         }
 
         public async Task<T> DeleteAsync(int id)
         {
-            var deleteItem = await dbSet.FindAsync(id);
-            unitOfWork.Db.Remove(deleteItem);
-            await unitOfWork.CommitAsync();
+            var deleteItem = await context.Set<T>().FindAsync(id);
+            context.Set<T>().Remove(deleteItem);
+            await context.SaveChangesAsync();
+
             return deleteItem;
         }
 
         public async Task<T> GetAsync(int id)
         {
-            return await dbSet.FindAsync(id);
+            return await context.Set<T>().FindAsync(id);
         }
 
 
         public async Task<T> UpdateAsync(T updatedItem)
         {
-            var item = dbSet.Attach(updatedItem);
+            var item = context.Set<T>().Attach(updatedItem);
             item.State = EntityState.Modified;
-            await unitOfWork.CommitAsync();
+            await context.SaveChangesAsync();
             return updatedItem;
         }
     }

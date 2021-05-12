@@ -1,20 +1,19 @@
 using Autofac;
-using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json.Serialization;
-using Project.DAL;
-using Project.Service.Dependency;
+using Project.Repository;
+using Project.Repository.Common;
+using Project.Repository.Repository;
+using Project.Service;
+using Project.Service.Common;
 using Project.WebAPI.Dependency;
-using Project.WebAPI.Profiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,33 +33,18 @@ namespace Project.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
-               .AddNewtonsoftJson(options => {
-                   options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-               });
 
-            services.AddDbContext<VehicleContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("VehicleConnection")));
-
-            //services.AddScoped<IVehicleMakeService, VehicleMakeService>();
-
-            services.AddOptions();
-            var config = new MapperConfiguration(c =>
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
             {
-                c.AddProfile(new ModelProfile());
-                c.AddProfile(new MakeProfile());
-                c.AddProfile(new Project.Service.Profiles.MakeProfile());
-                c.AddProfile(new Project.Service.Profiles.ModelProfile());
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Project.WebAPI", Version = "v1" });
             });
-            var mapper = config.CreateMapper();
-            services.AddSingleton(mapper);
+
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new DependencyRegister());
-            var container = ContainerConfig.Configure();
-            //DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +53,8 @@ namespace Project.WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Project.WebAPI v1"));
             }
 
             app.UseHttpsRedirection();

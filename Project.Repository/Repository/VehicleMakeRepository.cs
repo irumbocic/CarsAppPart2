@@ -7,52 +7,45 @@ using Project.Repository.Common;
 using Microsoft.EntityFrameworkCore;
 using Project.Model.Common;
 using System.Linq;
+using Project.DAL;
 
 namespace Project.Repository.Repository
 {
-    public class VehicleMakeRepository : IVehicleRepository<IVehicleMake>
+    public class VehicleMakeRepository : IVehicleMakeRepository
     {
-        private readonly IUnitOfWork unitOfWork;
-        internal DbSet<IVehicleMake> dbSet;
+        private readonly IVehicleRepository<IVehicleMake> repository;
 
-
-        public VehicleMakeRepository (IUnitOfWork unitOfWork)
+        public VehicleMakeRepository(IVehicleRepository<IVehicleMake> repository)
         {
-            if (unitOfWork == null) throw new ArgumentNullException("unitOfWork"); // MOzda negdje drugo staviti?
-            this.unitOfWork = unitOfWork;
-            this.dbSet = unitOfWork.Db.Set<IVehicleMake>();
+            this.repository = repository;
         }
+
 
         public async Task<IVehicleMake> CreteAsync(IVehicleMake newItem)
         {
-            await dbSet.AddAsync(newItem);
-            await unitOfWork.CommitAsync();
+            await repository.CreteAsync(newItem);
+
             return newItem;
         }
 
-        public async Task<IVehicleMake> DeleteAsync(int id)
+        public async Task<IVehicleMake> DeleteAsync(int id) // PROBAJ NAPRAVITI DA I OVO BUDE VehicleMake, da NEMAS OVOG FindAsync mozda, ne znam
         {
-            var deleteItem = await dbSet.FindAsync(id);
-            unitOfWork.Db.Remove(deleteItem);
-            await unitOfWork.CommitAsync();
-            return deleteItem;
+            return await repository.DeleteAsync(id);
+
         }
 
         public async Task<IVehicleMake> GetAsync(int id)
         {
-            return await dbSet.FindAsync(id);
+            return await repository.GetAsync(id);
         }
         public async Task<IVehicleMake> UpdateAsync(IVehicleMake updatedItem)
         {
-            var item = dbSet.Attach(updatedItem);
-            item.State = EntityState.Modified;
-            await unitOfWork.CommitAsync();
-            return updatedItem;
+            return await repository.UpdateAsync(updatedItem);
         }
-        public async Task<IEnumerable<IVehicleMake>> GetListOfMakeNamesAsync() // OVO NAPRAVI DRUGACIJE!!!!
+        public void GetListOfMakeNamesAsync() // OVO NAPRAVI DRUGACIJE!!!!
         {
-            var listOfMakeNames = await dbSet.ToListAsync();
-            return listOfMakeNames;
+            //var listOfMakeNames = await dbSet.ToListAsync();
+            //return listOfMakeNames;
         }
 
     }

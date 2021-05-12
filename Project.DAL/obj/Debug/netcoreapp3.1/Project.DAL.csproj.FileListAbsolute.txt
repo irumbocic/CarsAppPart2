@@ -10,3 +10,15 @@ C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreap
 C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.dll
 C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.pdb
 C:\Users\ivana\Desktop\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.genruntimeconfig.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csprojAssemblyReference.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfoInputs.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfo.cs
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csproj.CoreCompileInputs.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.dll
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.pdb
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.deps.json
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.json
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.dev.json
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.dll
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.genruntimeconfig.cache

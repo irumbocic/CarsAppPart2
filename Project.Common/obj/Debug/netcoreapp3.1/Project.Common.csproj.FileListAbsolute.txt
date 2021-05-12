@@ -1,0 +1,9 @@
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\bin\Debug\netcoreapp3.1\Project.Common.deps.json
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\bin\Debug\netcoreapp3.1\Project.Common.dll
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\bin\Debug\netcoreapp3.1\Project.Common.pdb
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.csprojAssemblyReference.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.AssemblyInfoInputs.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.AssemblyInfo.cs
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.csproj.CoreCompileInputs.cache
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.dll
+D:\zadatak2\CarsAppPart2\CarsAppPart2\Project.Common\obj\Debug\netcoreapp3.1\Project.Common.pdb
