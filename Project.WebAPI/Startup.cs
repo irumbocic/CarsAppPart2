@@ -42,7 +42,7 @@ namespace Project.WebAPI
 
         }
 
-        public void ConfigureContainer(ContainerBuilder builder)
+        public void ConfigureContainer(ContainerBuilder builder) // ZA AUTOFAC
         {
             builder.RegisterModule(new DependencyRegister());
         }
